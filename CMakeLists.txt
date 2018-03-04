@@ -51,6 +51,8 @@ set(CMAKE_MAP_IMPORTED_CONFIG_RELWITHDEBINFO Release)
 set(HUNTER_CONFIGURATION_TYPES Release)
 set(HUNTER_JOBS_NUMBER 4)
 set(HUNTER_CACHE_SERVERS "https://github.com/ethereum/hunter-cache")
+set(HUNTER_PASSWORDS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/Hunter/passwords.cmake)
+set(HUNTER_STATUS_DEBUG ON)
 include(HunterGate)
 HunterGate(
     URL "https://github.com/ruslo/hunter/archive/v0.20.9.tar.gz"
